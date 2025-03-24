@@ -1,0 +1,68 @@
+/* This is a style.css file: */
+
+/* Group selector */
+p, li {
+    font-size: 20px; /* changes the font size of the selected elements */
+}
+
+/* ID selector */
+#header {
+    text-align: center;
+    background-color: #333; /* turns the background of the h1 element to grey  */
+    color: gold; /* turns the color of the h1 text content to gold */
+    margin: 0; /* adds space between the h1 element and the div element  */
+    padding: 30px; /* adds space between the content in the h1 element and its border */
+}
+
+/* Element selector */
+body {
+    font-family: 'courier'; /* Different font value */
+    margin: 0;
+    background-image: url(cinema.jpg); /* location of image*/
+    background-repeat: no-repeat; /* prevents image repeat */
+    background-size: cover; /* scale image to cover the entire element, in this case <body> */
+    background-position: center; /* centers the image */
+}
+
+/* Class selector */
+.review {
+    color: black;
+    background-color: #FAF9F6;
+    width: 900px;
+    margin: 0 auto; 
+    padding: 50px;
+    border: solid 2px gold; /* creates a continous gold border around the element */
+}
+
+/* Element selector for image styling */
+img {
+    width: 900px;
+    height: 500px;
+}
+
+/* Element selector */
+button {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: gold;
+    display: block; /* changes the value of the elment from inline to block to allow the --margin: 40px auto;-- declaration to work on it since marin: auto; only works on block level elements only */
+    margin: 40px auto;
+    padding: 10px 100px;
+}
+
+/* Element selector */
+a {
+    color: gold;
+    text-decoration: none; /* removes the default list underline decoration */
+    font-weight: bold;
+}
+
+/* Element selector */
+ul {
+    list-style-type: square; /* changes the type of the list marker from the filled circle default to square */
+}
+
+li::marker {
+    color: gold; /* changes the color of the list marker */
+  }
